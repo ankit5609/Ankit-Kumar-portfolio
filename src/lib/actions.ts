@@ -26,7 +26,7 @@ export const sendEmailFn = createServerFn({ method: "POST" })
     });
 
     const mailOptions = {
-      from: `"${data.name}" <${user}>`,
+      from: `"${data.name}" <${receiver}>`,
       to: receiver,
       replyTo: data.email,
       subject: `Portfolio Contact Form: ${data.name}`,
@@ -40,6 +40,11 @@ export const sendEmailFn = createServerFn({ method: "POST" })
       `,
     };
 
-    await transporter.sendMail(mailOptions);
-    return { success: true };
+    try {
+      await transporter.sendMail(mailOptions);
+      return { success: true };
+    } catch (error) {
+      console.error("Nodemailer sendMail failed:", error);
+      throw error;
+    }
   });
