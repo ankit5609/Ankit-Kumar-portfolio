@@ -15,7 +15,7 @@ export const site = {
     github: "https://github.com/ankit5609",
     linkedin: "https://www.linkedin.com/in/ankit5609/",
     leetcode: "https://leetcode.com/u/ankit1304/",
-    gfg: "https://www.geeksforgeeks.org/profile/ankitkr5609",
+    gfg: "https://www.geeksforgeeks.org/profile/ankitkr5609?tab=activity",
     codechef: "https://www.codechef.com/users/ankit5609",
     codeforces: "https://codeforces.com/profile/ankit1304",
   },
