@@ -147,7 +147,7 @@ export function Hero() {
             <motion.a
               whileHover={{ scale: 1.04, y: -2 }}
               whileTap={{ scale: 0.97 }}
-              href="#projects"
+              href="/#projects"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/75 px-5 py-3 font-mono text-sm font-semibold transition-colors hover:border-accent hover:text-accent"
             >
               Open project lab <ArrowRight className="h-4 w-4" />
